@@ -54,3 +54,33 @@ eg:
 - **Method:** PUT
 - It updates the values of blog fields by passing the json, but Author of the blog can only update the values.
 
+
+## Users API
+
+###  Register the user
+
+- **URL:** `users/register`
+- **Method:** POST
+- It Register new user on blog app by passing values name,email and password as json.
+- eg: { "name": "Shivam Jha", "email": "testuser@gmail.com","password":"123" }
+
+###  Login for users
+
+- **URL:** `users/login`
+- **Method:** POST
+- It helps user to login on blog app by passing values email and password as json.
+- eg: { "email": "testuser@gmail.com","password":"123" }
+
+###  GET USER
+
+- **URL:** `users/user/{JWT TOKEN}`
+- **Method:** GET
+- It helps gey the user email id from blog app by passing JWT token as json, we also use it for verification.
+- eg: {"jwt": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MiwiZXhwIjoxNjkyNjUwNTAxLCJpYXQiOjE2OTI2MDczMDF95ah2JczenYR5XY18IopW_0KkVHS4LBJlYJyOZiAie5g"
+}
+
+###  Logout for users
+
+- **URL:** `users/logout`
+- **Method:** POST
+- It helps user to logout from blog app.
