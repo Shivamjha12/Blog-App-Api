@@ -7,7 +7,7 @@ This Django app provides API endpoints to manage blog posts and comments.
 
 ### Get Blog List
 
-Retrieves a list of all elevators.
+Retrieves a list of all blogs from database.
 
 - **URL:** `blogs/`
 - **Method:** GET
